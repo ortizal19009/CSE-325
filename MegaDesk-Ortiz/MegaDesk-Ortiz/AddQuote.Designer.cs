@@ -40,8 +40,8 @@
             sizeWidth = new TextBox();
             sizeDepth = new TextBox();
             nDrawers = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            surfaceMaterial = new ComboBox();
+            rushOrder = new ComboBox();
             SuspendLayout();
             // 
             // Menu
@@ -147,29 +147,30 @@
             nDrawers.Size = new Size(100, 23);
             nDrawers.TabIndex = 11;
             // 
-            // comboBox1
+            // surfaceMaterial
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(172, 119);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 12;
+            surfaceMaterial.FormattingEnabled = true;
+            surfaceMaterial.Location = new Point(172, 119);
+            surfaceMaterial.Name = "surfaceMaterial";
+            surfaceMaterial.Size = new Size(121, 23);
+            surfaceMaterial.TabIndex = 12;
+            surfaceMaterial.SelectedIndexChanged += surfaceMaterial_SelectedIndexChanged;
             // 
-            // comboBox2
+            // rushOrder
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(345, 119);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 13;
+            rushOrder.FormattingEnabled = true;
+            rushOrder.Location = new Point(345, 119);
+            rushOrder.Name = "rushOrder";
+            rushOrder.Size = new Size(121, 23);
+            rushOrder.TabIndex = 13;
             // 
             // AddQuoteForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(484, 311);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(rushOrder);
+            Controls.Add(surfaceMaterial);
             Controls.Add(nDrawers);
             Controls.Add(sizeDepth);
             Controls.Add(sizeWidth);
@@ -203,7 +204,7 @@
         private TextBox sizeWidth;
         private TextBox sizeDepth;
         private TextBox nDrawers;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox surfaceMaterial;
+        private ComboBox rushOrder;
     }
 }
