@@ -34,21 +34,22 @@ namespace MegaDesk_Ortiz
         {
 
         }
-        public bool ValidRangeSizeWidth(int number, out string errorMessage)
+        private void SizeWidthValiding(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+        public bool ValidRangeSizeWidth(int number)
         {
             if (number >= 1 && number <= 20)
             {
-                errorMessage = "";
                 return true;
             }
             else if (number <= 0 || number > 20)
             {
-                errorMessage = "Error Range";
                 return false;
             }
             else
             {
-                errorMessage = "Error Range";
                 return false;
             }
         }
