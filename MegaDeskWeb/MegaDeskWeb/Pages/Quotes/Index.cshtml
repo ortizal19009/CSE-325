@@ -1,0 +1,66 @@
+﻿@page
+@model MegaDeskWeb.Pages.Quotes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class="btn btn-sm btn-primary" asp-page="Create">Create New</a>
+</p>
+<table class="table table-sm table-hover table-bordered-primary table-warning">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].customerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].width)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].depth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].drawers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].rush)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quote[0].surface)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Quote) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.customerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.width)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.depth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.drawers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rush)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.surface)
+            </td>
+            <td>
+                <a class="btn btn-sm btn-success" asp-page="./Edit" asp-route-id="@item.id">Edit</a> |
+                <a class="btn btn-sm btn-warning" asp-page="./Details" asp-route-id="@item.id">Details</a> |
+                <a class="btn btn-sm btn-danger" asp-page="./Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
