@@ -16,8 +16,8 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label asp-for="Quote.customerName" class="control-label"></label>
-                        <input asp-for="Quote.customerName" class="form-control form-control-sm" />
+                        <label asp-for="Quote.customerName" class="control-label">Customer name</label>
+                        <input asp-for="Quote.customerName" class="form-control form-control-sm" autocomplete="off" />
                         <span asp-validation-for="Quote.customerName" class="text-danger"></span>
                     </div>
                 </div>
@@ -25,22 +25,22 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label asp-for="Quote.width" class="control-label"></label>
-                        <input asp-for="Quote.width" class="form-control form-control-sm" />
+                        <label asp-for="Quote.width" class="control-label">Size of desk in width</label>
+                        <input asp-for="Quote.width" class="form-control form-control-sm" min=24 max=96 autocomplete="off" />
                         <span asp-validation-for="Quote.width" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
-                        <label asp-for="Quote.depth" class="control-label"></label>
-                        <input asp-for="Quote.depth" class="form-control form-control-sm" />
+                        <label asp-for="Quote.depth" class="control-label">Size of the desk in depth</label>
+                        <input asp-for="Quote.depth" class="form-control form-control-sm" min=12 max=48 autocomplete="off" />
                         <span asp-validation-for="Quote.depth" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
-                        <label asp-for="Quote.drawers" class="control-label"></label>
-                        <input asp-for="Quote.drawers" class="form-control form-control-sm" />
+                        <label asp-for="Quote.drawers" class="control-label">Number of drawers</label>
+                        <input asp-for="Quote.drawers" class="form-control form-control-sm" min=0 max=7 autocomplete="off" />
                         <span asp-validation-for="Quote.drawers" class="text-danger"></span>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="col-sm">
 
                     <div class="form-group">
-                        <label asp-for="Quote.rush" class="control-label"></label>
+                        <label asp-for="Quote.rush" class="control-label">Rush order options</label>
                         <select asp-for="Quote.rush" class="form-select form-select-sm">
                             <option value="14">Standard Shipping: 14 days</option>
                             <option value="7">Rush Order: 7 days</option>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
-                        <label asp-for="Quote.surface" class="control-label"></label>
+                        <label asp-for="Quote.surface" class="control-label">Desktop surface material</label>
                         <select asp-for="Quote.surface" class="form-select form-select-sm">
                             <option value="Oak">Oak</option>
                             <option value="Laminate">Laminate</option>
