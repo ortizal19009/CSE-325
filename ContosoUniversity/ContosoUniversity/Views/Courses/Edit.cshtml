@@ -4,9 +4,11 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Course</h4>
+<h2>Edit course</h2>
+<div class="form-group">
+    <label asp-for="CourseID" class="control-label"></label>
+    <div>@Html.DisplayFor(model => model.CourseID)</div>
+</div>
 <hr />
 <div class="row">
     <div class="col-md-4">
