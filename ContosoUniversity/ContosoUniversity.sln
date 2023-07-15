@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.6.33815.320
+VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{DC3D5016-57F0-4E08-BC34-34C57AD6D33B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{D328AF6B-E074-43A4-B290-9B4A6A07575E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DC3D5016-57F0-4E08-BC34-34C57AD6D33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC3D5016-57F0-4E08-BC34-34C57AD6D33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC3D5016-57F0-4E08-BC34-34C57AD6D33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC3D5016-57F0-4E08-BC34-34C57AD6D33B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D328AF6B-E074-43A4-B290-9B4A6A07575E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D328AF6B-E074-43A4-B290-9B4A6A07575E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D328AF6B-E074-43A4-B290-9B4A6A07575E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D328AF6B-E074-43A4-B290-9B4A6A07575E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {11B59329-CCA2-474B-86A1-F26764CD9F3A}
+		SolutionGuid = {C9DE0443-A1D9-4753-A8B5-9B6F35FE6DD6}
 	EndGlobalSection
 EndGlobal
