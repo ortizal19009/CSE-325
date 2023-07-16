@@ -4,10 +4,10 @@
     ViewData["Title"] = "Edit";
 }
 
-<h2>Edit course</h2>
 <div class="form-group">
-    <label asp-for="CourseID" class="control-label"></label>
-    <div>@Html.DisplayFor(model => model.CourseID)</div>
+<h4>Edit course:
+    @Html.DisplayFor(model => model.CourseID)
+</h4>
 </div>
 <hr />
 <div class="row">
@@ -31,14 +31,11 @@
                 <span asp-validation-for="DepartmentID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-sm btn-secondary">Back </a>
+                <input type="submit" value="Save" class="btn btn-success btn-sm" />
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

@@ -59,8 +59,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url("https://www.istockphoto.com/es/foto/ilustraci%C3%B3n-de-mapas-gr%C3%A1ficos-abstractos-sobre-fondo-azul-big-data-y-concepto-de-gm1294021851-388180453?utm_campaign=srp_photos_70&utm_content=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ftechnology%2F&utm_medium=affiliate&utm_source=pexels&utm_term=technology");
 }
 .footer {
   position: absolute;
